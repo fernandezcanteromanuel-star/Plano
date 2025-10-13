@@ -9,6 +9,10 @@ class Posicion:
         self.velocidad = velocidad
         self.angulo = angulo
         self.tiempo = tiempo
-    def altura(self.y_inicial, self.tiempo, self.velocidad, self.angulo):
-        
+    def altura(self):
+        vy = self.velocidad*math.sin(self.angulo)
+        y = self.y_inicial + vy*self.tiempo - 0.5*9.8*(self.tiempo**2)
+        return y
 
+p1 = Posicion(0, 1.5, 20, math.pi/4, 2)
+print(p1.altura())
