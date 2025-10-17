@@ -1,7 +1,7 @@
 import math
 
 
-#NIGGA
+
 class Posicion:
     def __init__(self, x_inicial, y_inicial, velocidad, angulo):
         self.x_inicial = x_inicial
