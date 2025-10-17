@@ -1,10 +1,8 @@
-import math
+def factorial(n):
 
+    if n > 1:
+        n = n*factorial(n-1)
+    print(n)
+    return n
 
-# nigga
-class Punto:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-        
-        
+factorial(5)
